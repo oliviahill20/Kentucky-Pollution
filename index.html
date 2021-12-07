@@ -1,0 +1,420 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Yosemite Falls Trail and the 1189 Named Trails in California</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,900i" rel="stylesheet">
+
+    <style>
+        /* UK Colors: 
+            #c7c9c8 light gray 
+            #63666a dark gray
+            #15397f dark blue
+            #009bda light blue
+            #0033a0 official blue
+        */
+        body {
+            margin: 0;
+            padding: 0;
+            background: #1d1d1d;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #f5f5f5;
+            font-size: 1.1em;
+
+        }
+
+        section {
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        h1 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 900i;
+            font-size: 2.8em;
+            font-style: italic;
+            /* The em unit. 3x the current size */
+            letter-spacing: .01em;
+            margin: 0 0 15px 0;
+            /* text-transform: uppercase; */
+        }
+
+        h2 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            color: #fdc8a9;
+            font-size: 1.5em;
+            letter-spacing: .06em;
+            font-style: italic;
+            margin: 0 0 25px 0;
+        }
+
+        p {
+            font-size: 1.15em;
+            line-height: 1.8em;
+            margin: 0 0 25px 0;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding: 0px 20px 4px 20px;
+            /* font-size: 0.96em; */
+            line-height: 1.6em;
+            color: #facaa2;
+        }
+
+        li {
+            margin: 10px 0
+        }
+
+        #map {
+            width: 100%;
+            margin: 0px auto;
+
+        }
+
+        .max-image-width {
+            width: 100%;
+        }
+
+        /* add custom style class here */
+
+        .linkbox {
+            margin: 3px 0 20px 0;
+            display: block;
+            font-weight: 300;
+        }
+
+        hr {
+            border: 0px;
+            border-bottom: 1px solid #003a0e;
+            padding-top: 20px;
+        }
+
+        /* Use float property to make two-column layout */
+
+        .first-column {
+            float: left;
+            width: 48%;
+            padding-right: 20px;
+        }
+
+        .column {
+            float: left;
+            width: 48%;
+        }
+
+        /* Clear floats after the columns */
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .svg-title {
+            float: left;
+            display: inline-block;
+            width: 75px;
+            margin: -8px 10px -8px 0;
+        }
+
+        /* When browser is 800px wide or less */
+
+        @media screen and (max-width: 800px) {
+
+            .first-column,
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <iframe src="map.html" width="100%" height="440px"></iframe>
+    <section>
+        <a href='map.html' class="linkbox">Full-screen version</a>
+
+        <img src="Pictograms-nps-trailhead.svg" class="svg-title">
+        <h1>1189 Named Trails in California</h1>
+        <h2>University of Kentucky Geography</h2>
+        <div class="row">
+            <div class="first-column">
+                <p>
+                    California Trails extracted from the Geographic Names Information System (GNIS) and published by
+                    the United States Geological Services (USGS). (<a hred="https://www.usgs.gov/core-science-systems/ngp/board-on-geographic-names/download-gnis-data">usgs.gov</a>)
+                    Data accessed December, 2021. Contours were extracted from a USGS 1/3 Arc Second n38w120 20210701 raster. This data can be accessed at the USGS 3D Elevation Program (<a href="https://www.usgs.gov/core-science-systems/ngp/3dep">usgs.gov</a>)
+                </p>
+                <h3>Tools used in this project</h3>
+                <ul>
+                    <li>GIS 3.20 was used to store/query the national dataset.</li>
+                    <li>Data is shown on Mapbox web map with geolocation services enabled. If the map got popular it would require a fee to use.</li>
+                    <li>GDAL and QGIS 3.20 to convert raster elevation units and create contours.</li>
+                </ul>
+
+
+                <hr>
+                <h3>Project assets</h3>
+                <ul>
+                    <li>California Trails Geojson</li>
+                    <!-- <li><a href="Cali_Trailheads.geojson" download>point locations GeoJSON</a></li>-->
+                    <a href="Cali_Trails.geojson">Link to California Trails Geojson</a>
+                </ul>
+            
+                    <img class="max-image-width" src="Cali_Trailheads_1200.png"
+                        title="California Trailheads by Elevation">
+                    <div class="linkbox">California Trailheads by Elevation</div>
+			<a href="Cali_Trailheads_8000updated.png">Link to high resolution map</a>
+                </p>
+
+
+            </div>
+            <div class="column">
+                <img class="max-image-width" src="YFT2.jpg"
+                    title="Yosemite Falls Trail">
+                <div class="linkbox">Yosemite Falls Trail - Photograph by Getty Images</div>
+
+                
+            </div>
+            <div class="column">
+                <img class="max-image-width" src="Me_YFT.JPG"
+                    title="Me hiking Yosemite Falls Trail">
+                <div class="linkbox">Me (the author) hiking Yosemite Falls Trail - Photograph by Olivia Hill</div>
+
+            </div>
+        </div>
+
+
+        <hr>
+        <!-- <h4><a href="https://uky-gis.github.io">UKy GIS and Mapping</a></h4> -->
+        <li>See my projects on GitHub: <a href="https://github.com/oliviahill20">oliviahill20</a></li>
+        <li>Follow me on twitter: <a href="https://twitter.com/oliviahill20">@oliviahill20</a></li>
+        <li>Visit my <a href='https://newmapsplus.uky.edu/explore-new-maps'>mapping portfolio</a>.</li>
+            <img src="logo-color-400px.png" alt="Uinversity of Kentucky Geography"></a>
+    </section>
+</body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Yosemite Falls Trail and the 1189 Named Trails in California</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,900i" rel="stylesheet">
+
+    <style>
+        /* UK Colors: 
+            #c7c9c8 light gray 
+            #63666a dark gray
+            #15397f dark blue
+            #009bda light blue
+            #0033a0 official blue
+        */
+        body {
+            margin: 0;
+            padding: 0;
+            background: #1d1d1d;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #f5f5f5;
+            font-size: 1.1em;
+
+        }
+
+        section {
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        h1 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 900i;
+            font-size: 2.8em;
+            font-style: italic;
+            /* The em unit. 3x the current size */
+            letter-spacing: .01em;
+            margin: 0 0 15px 0;
+            /* text-transform: uppercase; */
+        }
+
+        h2 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            color: #fdc8a9;
+            font-size: 1.5em;
+            letter-spacing: .06em;
+            font-style: italic;
+            margin: 0 0 25px 0;
+        }
+
+        p {
+            font-size: 1.15em;
+            line-height: 1.8em;
+            margin: 0 0 25px 0;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding: 0px 20px 4px 20px;
+            /* font-size: 0.96em; */
+            line-height: 1.6em;
+            color: #facaa2;
+        }
+
+        li {
+            margin: 10px 0
+        }
+
+        #map {
+            width: 100%;
+            margin: 0px auto;
+
+        }
+
+        .max-image-width {
+            width: 100%;
+        }
+
+        /* add custom style class here */
+
+        .linkbox {
+            margin: 3px 0 20px 0;
+            display: block;
+            font-weight: 300;
+        }
+
+        hr {
+            border: 0px;
+            border-bottom: 1px solid #003a0e;
+            padding-top: 20px;
+        }
+
+        /* Use float property to make two-column layout */
+
+        .first-column {
+            float: left;
+            width: 48%;
+            padding-right: 20px;
+        }
+
+        .column {
+            float: left;
+            width: 48%;
+        }
+
+        /* Clear floats after the columns */
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .svg-title {
+            float: left;
+            display: inline-block;
+            width: 75px;
+            margin: -8px 10px -8px 0;
+        }
+
+        /* When browser is 800px wide or less */
+
+        @media screen and (max-width: 800px) {
+
+            .first-column,
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <iframe src="map.html" width="100%" height="440px"></iframe>
+    <section>
+        <a href='map.html' class="linkbox">Full-screen version</a>
+
+        <img src="Pictograms-nps-trailhead.svg" class="svg-title">
+        <h1>1189 Named Trails in California</h1>
+        <h2>University of Kentucky Geography</h2>
+        <div class="row">
+            <div class="first-column">
+                <p>
+                    California Trails extracted from the Geographic Names Information System (GNIS) and published by
+                    the United States Geological Services (USGS). (<a hred="https://www.usgs.gov/core-science-systems/ngp/board-on-geographic-names/download-gnis-data">usgs.gov</a>)
+                    Data accessed December, 2021. Contours were extracted from a USGS 1/3 Arc Second n38w120 20210701 raster. This data can be accessed at the USGS 3D Elevation Program (<a href="https://www.usgs.gov/core-science-systems/ngp/3dep">usgs.gov</a>)
+                </p>
+                <h3>Tools used in this project</h3>
+                <ul>
+                    <li>GIS 3.20 was used to store/query the national dataset.</li>
+                    <li>Data is shown on Mapbox web map with geolocation services enabled. If the map got popular it would require a fee to use.</li>
+                    <li>GDAL and QGIS 3.20 to convert raster elevation units and create contours.</li>
+                </ul>
+
+
+                <hr>
+                <h3>Project assets</h3>
+                <ul>
+                    <li>California Trails Geojson</li>
+                    <!-- <li><a href="Cali_Trailheads.geojson" download>point locations GeoJSON</a></li>-->
+                    <a href="Cali_Trails.geojson">Link to California Trails Geojson</a>
+                </ul>
+            
+                    <img class="max-image-width" src="Cali_Trailheads_1200.png"
+                        title="California Trailheads by Elevation">
+                    <div class="linkbox">California Trailheads by Elevation</div>
+			<a href="Cali_Trailheads_8000updated.png">Link to high resolution map</a>
+                </p>
+
+
+            </div>
+            <div class="column">
+                <img class="max-image-width" src="YFT2.jpg"
+                    title="Yosemite Falls Trail">
+                <div class="linkbox">Yosemite Falls Trail - Photograph by Getty Images</div>
+
+                
+            </div>
+            <div class="column">
+                <img class="max-image-width" src="Me_YFT.JPG"
+                    title="Me hiking Yosemite Falls Trail">
+                <div class="linkbox">Me (the author) hiking Yosemite Falls Trail - Photograph by Olivia Hill</div>
+
+            </div>
+        </div>
+
+
+        <hr>
+        <!-- <h4><a href="https://uky-gis.github.io">UKy GIS and Mapping</a></h4> -->
+        <li>See my projects on GitHub: <a href="https://github.com/oliviahill20">oliviahill20</a></li>
+        <li>Follow me on twitter: <a href="https://twitter.com/oliviahill20">@oliviahill20</a></li>
+        <li>Visit my <a href='https://newmapsplus.uky.edu/explore-new-maps'>mapping portfolio</a>.</li>
+            <img src="logo-color-400px.png" alt="Uinversity of Kentucky Geography"></a>
+    </section>
+</body>
+>>>>>>> 158b88bf0c0e88ca0a83515d873124111ed0e5b6
+</html>
