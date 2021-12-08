@@ -1,0 +1,2755 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis saveUser="clayt" saveUserFull="Clay Giannini" projectname="" version="3.20.3-Odense" saveDateTime="2021-12-07T18:29:56">
+  <homePath path=""/>
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <wkt>PROJCRS["NAD83 / Kentucky Single Zone (ftUS)",BASEGEOGCRS["NAD83",DATUM["North American Datum 1983",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4269]],CONVERSION["SPCS83 Kentucky Single Zone (US Survey feet)",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",36.3333333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",-85.75,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",37.0833333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",38.6666666666667,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",4921250,LENGTHUNIT["US survey foot",0.304800609601219],ID["EPSG",8826]],PARAMETER["Northing at false origin",3280833.333,LENGTHUNIT["US survey foot",0.304800609601219],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["US survey foot",0.304800609601219]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["US survey foot",0.304800609601219]],USAGE[SCOPE["State-wide spatial data management."],AREA["United States (USA) - Kentucky."],BBOX[36.49,-89.57,39.15,-81.95]],ID["EPSG",3089]]</wkt>
+      <proj4>+proj=lcc +lat_0=36.3333333333333 +lon_0=-85.75 +lat_1=37.0833333333333 +lat_2=38.6666666666667 +x_0=1500000 +y_0=999999.9998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs</proj4>
+      <srsid>1052</srsid>
+      <srid>3089</srid>
+      <authid>EPSG:3089</authid>
+      <description>NAD83 / Kentucky Single Zone (ftUS)</description>
+      <projectionacronym>lcc</projectionacronym>
+      <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties>
+      <Option/>
+    </customproperties>
+    <layer-tree-layer expanded="1" patch_size="-1,-1" id="EJSCREEN_2020_StatePctile_a7d894ce_5962_475b_aecd_4cb37a173fe2" legend_split_behavior="0" name="EJSCREEN_2020_StatePctile" providerKey="ogr" source="./downloaded data/EJSCREEN_2020_StatePctile.csv|subset=&quot;STATE_NAME&quot; = 'Kentucky'" checked="Qt::Checked" legend_exp="">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" patch_size="-1,-1" id="UrbanAreas_KY_63ff23fd_364b_49ee_8382_951cad1fbcee" legend_split_behavior="0" name="UrbanAreas_KY" providerKey="ogr" source="./UrbanAreas_KY.geojson|layername=UrbanAreas_KY" checked="Qt::Checked" legend_exp="">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" patch_size="-1,-1" id="KY_494773c5_b803_4394_8560_a89db561a69a" legend_split_behavior="0" name="KY" providerKey="ogr" source="./KY.geojson" checked="Qt::Checked" legend_exp="">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>KY_494773c5_b803_4394_8560_a89db561a69a</item>
+      <item>UrbanAreas_KY_63ff23fd_364b_49ee_8382_951cad1fbcee</item>
+      <item>EJSCREEN_2020_StatePctile_a7d894ce_5962_475b_aecd_4cb37a173fe2</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings unit="1" scaleDependencyMode="0" intersection-snapping="0" minScale="0" tolerance="12" maxScale="0" enabled="0" mode="2" type="1" self-snapping="0">
+    <individual-layer-settings>
+      <layer-setting units="1" minScale="0" id="KY_494773c5_b803_4394_8560_a89db561a69a" tolerance="12" maxScale="0" enabled="0" type="1"/>
+      <layer-setting units="1" minScale="0" id="UrbanAreas_KY_63ff23fd_364b_49ee_8382_951cad1fbcee" tolerance="12" maxScale="0" enabled="0" type="1"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <polymorphicRelations/>
+  <mapcanvas name="theMapCanvas" annotationsVisible="1">
+    <units>feet</units>
+    <extent>
+      <xmin>3517774.62220661342144012</xmin>
+      <ymin>1823543.45992622477933764</ymin>
+      <xmax>6116783.26294867694377899</xmax>
+      <ymax>4978011.03780071251094341</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <wkt>PROJCRS["NAD83 / Kentucky Single Zone (ftUS)",BASEGEOGCRS["NAD83",DATUM["North American Datum 1983",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4269]],CONVERSION["SPCS83 Kentucky Single Zone (US Survey feet)",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",36.3333333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",-85.75,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",37.0833333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",38.6666666666667,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",4921250,LENGTHUNIT["US survey foot",0.304800609601219],ID["EPSG",8826]],PARAMETER["Northing at false origin",3280833.333,LENGTHUNIT["US survey foot",0.304800609601219],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["US survey foot",0.304800609601219]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["US survey foot",0.304800609601219]],USAGE[SCOPE["State-wide spatial data management."],AREA["United States (USA) - Kentucky."],BBOX[36.49,-89.57,39.15,-81.95]],ID["EPSG",3089]]</wkt>
+        <proj4>+proj=lcc +lat_0=36.3333333333333 +lon_0=-85.75 +lat_1=37.0833333333333 +lat_2=38.6666666666667 +x_0=1500000 +y_0=999999.9998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs</proj4>
+        <srsid>1052</srsid>
+        <srid>3089</srid>
+        <authid>EPSG:3089</authid>
+        <description>NAD83 / Kentucky Single Zone (ftUS)</description>
+        <projectionacronym>lcc</projectionacronym>
+        <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <projectModels/>
+  <legend updateDrawingOrder="true">
+    <legendlayer drawingOrder="-1" showFeatureCount="0" open="true" name="EJSCREEN_2020_StatePctile" checked="Qt::Checked">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="EJSCREEN_2020_StatePctile_a7d894ce_5962_475b_aecd_4cb37a173fe2" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" showFeatureCount="0" open="true" name="UrbanAreas_KY" checked="Qt::Checked">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="UrbanAreas_KY_63ff23fd_364b_49ee_8382_951cad1fbcee" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" showFeatureCount="0" open="true" name="KY" checked="Qt::Checked">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="KY_494773c5_b803_4394_8560_a89db561a69a" visible="1"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D/>
+  <main-annotation-layer autoRefreshEnabled="0" autoRefreshTime="0" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" type="annotation">
+    <id>Annotations_9549862e_302b_439f_838c_3a8579b1f30e</id>
+    <datasource></datasource>
+    <keywordList>
+      <value></value>
+    </keywordList>
+    <layername>Annotations</layername>
+    <srs>
+      <spatialrefsys>
+        <wkt></wkt>
+        <proj4></proj4>
+        <srsid>0</srsid>
+        <srid>0</srid>
+        <authid></authid>
+        <description></description>
+        <projectionacronym></projectionacronym>
+        <ellipsoidacronym></ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </srs>
+    <resourceMetadata>
+      <identifier></identifier>
+      <parentidentifier></parentidentifier>
+      <language></language>
+      <type></type>
+      <title></title>
+      <abstract></abstract>
+      <links/>
+      <fees></fees>
+      <encoding></encoding>
+      <crs>
+        <spatialrefsys>
+          <wkt></wkt>
+          <proj4></proj4>
+          <srsid>0</srsid>
+          <srid>0</srid>
+          <authid></authid>
+          <description></description>
+          <projectionacronym></projectionacronym>
+          <ellipsoidacronym></ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </crs>
+      <extent/>
+    </resourceMetadata>
+    <items/>
+    <layerOpacity>1</layerOpacity>
+    <blendMode>0</blendMode>
+  </main-annotation-layer>
+  <projectlayers>
+    <maplayer hasScaleBasedVisibilityFlag="0" autoRefreshEnabled="0" readOnly="0" wkbType="NoGeometry" minScale="1e+08" autoRefreshTime="0" maxScale="0" styleCategories="AllStyleCategories" geometry="No geometry" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" type="vector">
+      <id>EJSCREEN_2020_StatePctile_a7d894ce_5962_475b_aecd_4cb37a173fe2</id>
+      <datasource>./downloaded data/EJSCREEN_2020_StatePctile.csv|subset="STATE_NAME" = 'Kentucky'</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>EJSCREEN_2020_StatePctile</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt></wkt>
+          <proj4></proj4>
+          <srsid>0</srsid>
+          <srid>0</srid>
+          <authid></authid>
+          <description></description>
+          <projectionacronym></projectionacronym>
+          <ellipsoidacronym></ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="windows-1252">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal fixedDuration="0" endField="" endExpression="" accumulate="0" durationField="" startField="" durationUnit="min" startExpression="" enabled="0" mode="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <customproperties>
+        <Option type="Map">
+          <Option name="dualview/previewExpressions" type="List">
+            <Option value="&quot;STATE_NAME&quot;" type="QString"/>
+          </Option>
+        </Option>
+      </customproperties>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks type="StringList">
+          <Option value="" type="QString"/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend showLabelLegend="0" type="default-vector"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field configurationFlags="None" name="OBJECTID">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="ID">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="STATE_NAME">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="ST_ABBREV">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="REGION">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="ACSTOTPOP">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="D_PM25_2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_PM25_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_PM25_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="D_OZONE_2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_OZONE_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_OZONE_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="D_DSLPM_2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_DSLPM_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_DSLPM_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="D_CANCR_2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_CANCR_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_CANCR_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="D_RESP_2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_RESP_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_RESP_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="D_PTRAF_2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_PTRAF_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_PTRAF_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="D_LDPNT_2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_LDPNT_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_LDPNT_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="D_PNPL_2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_PNPL_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_PNPL_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="D_PRMP_2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_PRMP_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_PRMP_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="D_PTSDF_2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_PTSDF_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_PTSDF_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="D_PWDIS_2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_PWDIS_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_PWDIS_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="PM25">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_PM25">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_PM25">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="OZONE">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_OZONE">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_OZONE">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="DSLPM">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_DSLPM">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_DSLPM">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="CANCER">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_CANCR">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_CANCR">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="RESP">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_RESP">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_RESP">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="PTRAF">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_PTRAF">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_PTRAF">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="PRE1960PCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_LDPNT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_LDPNT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="PNPL">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_PNPL">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_PNPL">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="PRMP">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_PRMP">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_PRMP">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="PTSDF">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_PTSDF">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_PTSDF">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="PWDIS">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_PWDIS">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_PWDIS">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="VULEOPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_VULEOPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_VULEOPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="MINORPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_MINORPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_MINORPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="LOWINCPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_LWINCPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_LWINCPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="LINGISOPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_LNGISPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_LNGISPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="LESSHSPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_LESHSPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_LESHSPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="UNDER5PCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_UNDR5PCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_UNDR5PCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="OVER64PCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="B_OVR64PCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="P_OVR64PCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_MINORPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_LWINCPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_LNGISPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_LESHSPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_UNDR5PCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_OVR64PCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_VULEOPCT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_PM25">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_PM25_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_OZONE">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_OZONE_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_DSLPM">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_DSLPM_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_CANCR">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_CANCR_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_RESP">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_RESP_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_PTRAF">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_PTRAF_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_LDPNT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_LDPNT_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_PNPL">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_PNPL_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_PRMP">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_PRMP_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_PTSDF">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_PTSDF_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_PWDIS">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="T_PWDIS_D2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="Shape_Length">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="Shape_Area">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="OBJECTID"/>
+        <alias index="1" name="" field="ID"/>
+        <alias index="2" name="" field="STATE_NAME"/>
+        <alias index="3" name="" field="ST_ABBREV"/>
+        <alias index="4" name="" field="REGION"/>
+        <alias index="5" name="" field="ACSTOTPOP"/>
+        <alias index="6" name="" field="D_PM25_2"/>
+        <alias index="7" name="" field="B_PM25_D2"/>
+        <alias index="8" name="" field="P_PM25_D2"/>
+        <alias index="9" name="" field="D_OZONE_2"/>
+        <alias index="10" name="" field="B_OZONE_D2"/>
+        <alias index="11" name="" field="P_OZONE_D2"/>
+        <alias index="12" name="" field="D_DSLPM_2"/>
+        <alias index="13" name="" field="B_DSLPM_D2"/>
+        <alias index="14" name="" field="P_DSLPM_D2"/>
+        <alias index="15" name="" field="D_CANCR_2"/>
+        <alias index="16" name="" field="B_CANCR_D2"/>
+        <alias index="17" name="" field="P_CANCR_D2"/>
+        <alias index="18" name="" field="D_RESP_2"/>
+        <alias index="19" name="" field="B_RESP_D2"/>
+        <alias index="20" name="" field="P_RESP_D2"/>
+        <alias index="21" name="" field="D_PTRAF_2"/>
+        <alias index="22" name="" field="B_PTRAF_D2"/>
+        <alias index="23" name="" field="P_PTRAF_D2"/>
+        <alias index="24" name="" field="D_LDPNT_2"/>
+        <alias index="25" name="" field="B_LDPNT_D2"/>
+        <alias index="26" name="" field="P_LDPNT_D2"/>
+        <alias index="27" name="" field="D_PNPL_2"/>
+        <alias index="28" name="" field="B_PNPL_D2"/>
+        <alias index="29" name="" field="P_PNPL_D2"/>
+        <alias index="30" name="" field="D_PRMP_2"/>
+        <alias index="31" name="" field="B_PRMP_D2"/>
+        <alias index="32" name="" field="P_PRMP_D2"/>
+        <alias index="33" name="" field="D_PTSDF_2"/>
+        <alias index="34" name="" field="B_PTSDF_D2"/>
+        <alias index="35" name="" field="P_PTSDF_D2"/>
+        <alias index="36" name="" field="D_PWDIS_2"/>
+        <alias index="37" name="" field="B_PWDIS_D2"/>
+        <alias index="38" name="" field="P_PWDIS_D2"/>
+        <alias index="39" name="" field="PM25"/>
+        <alias index="40" name="" field="B_PM25"/>
+        <alias index="41" name="" field="P_PM25"/>
+        <alias index="42" name="" field="OZONE"/>
+        <alias index="43" name="" field="B_OZONE"/>
+        <alias index="44" name="" field="P_OZONE"/>
+        <alias index="45" name="" field="DSLPM"/>
+        <alias index="46" name="" field="B_DSLPM"/>
+        <alias index="47" name="" field="P_DSLPM"/>
+        <alias index="48" name="" field="CANCER"/>
+        <alias index="49" name="" field="B_CANCR"/>
+        <alias index="50" name="" field="P_CANCR"/>
+        <alias index="51" name="" field="RESP"/>
+        <alias index="52" name="" field="B_RESP"/>
+        <alias index="53" name="" field="P_RESP"/>
+        <alias index="54" name="" field="PTRAF"/>
+        <alias index="55" name="" field="B_PTRAF"/>
+        <alias index="56" name="" field="P_PTRAF"/>
+        <alias index="57" name="" field="PRE1960PCT"/>
+        <alias index="58" name="" field="B_LDPNT"/>
+        <alias index="59" name="" field="P_LDPNT"/>
+        <alias index="60" name="" field="PNPL"/>
+        <alias index="61" name="" field="B_PNPL"/>
+        <alias index="62" name="" field="P_PNPL"/>
+        <alias index="63" name="" field="PRMP"/>
+        <alias index="64" name="" field="B_PRMP"/>
+        <alias index="65" name="" field="P_PRMP"/>
+        <alias index="66" name="" field="PTSDF"/>
+        <alias index="67" name="" field="B_PTSDF"/>
+        <alias index="68" name="" field="P_PTSDF"/>
+        <alias index="69" name="" field="PWDIS"/>
+        <alias index="70" name="" field="B_PWDIS"/>
+        <alias index="71" name="" field="P_PWDIS"/>
+        <alias index="72" name="" field="VULEOPCT"/>
+        <alias index="73" name="" field="B_VULEOPCT"/>
+        <alias index="74" name="" field="P_VULEOPCT"/>
+        <alias index="75" name="" field="MINORPCT"/>
+        <alias index="76" name="" field="B_MINORPCT"/>
+        <alias index="77" name="" field="P_MINORPCT"/>
+        <alias index="78" name="" field="LOWINCPCT"/>
+        <alias index="79" name="" field="B_LWINCPCT"/>
+        <alias index="80" name="" field="P_LWINCPCT"/>
+        <alias index="81" name="" field="LINGISOPCT"/>
+        <alias index="82" name="" field="B_LNGISPCT"/>
+        <alias index="83" name="" field="P_LNGISPCT"/>
+        <alias index="84" name="" field="LESSHSPCT"/>
+        <alias index="85" name="" field="B_LESHSPCT"/>
+        <alias index="86" name="" field="P_LESHSPCT"/>
+        <alias index="87" name="" field="UNDER5PCT"/>
+        <alias index="88" name="" field="B_UNDR5PCT"/>
+        <alias index="89" name="" field="P_UNDR5PCT"/>
+        <alias index="90" name="" field="OVER64PCT"/>
+        <alias index="91" name="" field="B_OVR64PCT"/>
+        <alias index="92" name="" field="P_OVR64PCT"/>
+        <alias index="93" name="" field="T_MINORPCT"/>
+        <alias index="94" name="" field="T_LWINCPCT"/>
+        <alias index="95" name="" field="T_LNGISPCT"/>
+        <alias index="96" name="" field="T_LESHSPCT"/>
+        <alias index="97" name="" field="T_UNDR5PCT"/>
+        <alias index="98" name="" field="T_OVR64PCT"/>
+        <alias index="99" name="" field="T_VULEOPCT"/>
+        <alias index="100" name="" field="T_PM25"/>
+        <alias index="101" name="" field="T_PM25_D2"/>
+        <alias index="102" name="" field="T_OZONE"/>
+        <alias index="103" name="" field="T_OZONE_D2"/>
+        <alias index="104" name="" field="T_DSLPM"/>
+        <alias index="105" name="" field="T_DSLPM_D2"/>
+        <alias index="106" name="" field="T_CANCR"/>
+        <alias index="107" name="" field="T_CANCR_D2"/>
+        <alias index="108" name="" field="T_RESP"/>
+        <alias index="109" name="" field="T_RESP_D2"/>
+        <alias index="110" name="" field="T_PTRAF"/>
+        <alias index="111" name="" field="T_PTRAF_D2"/>
+        <alias index="112" name="" field="T_LDPNT"/>
+        <alias index="113" name="" field="T_LDPNT_D2"/>
+        <alias index="114" name="" field="T_PNPL"/>
+        <alias index="115" name="" field="T_PNPL_D2"/>
+        <alias index="116" name="" field="T_PRMP"/>
+        <alias index="117" name="" field="T_PRMP_D2"/>
+        <alias index="118" name="" field="T_PTSDF"/>
+        <alias index="119" name="" field="T_PTSDF_D2"/>
+        <alias index="120" name="" field="T_PWDIS"/>
+        <alias index="121" name="" field="T_PWDIS_D2"/>
+        <alias index="122" name="" field="Shape_Length"/>
+        <alias index="123" name="" field="Shape_Area"/>
+      </aliases>
+      <defaults>
+        <default applyOnUpdate="0" field="OBJECTID" expression=""/>
+        <default applyOnUpdate="0" field="ID" expression=""/>
+        <default applyOnUpdate="0" field="STATE_NAME" expression=""/>
+        <default applyOnUpdate="0" field="ST_ABBREV" expression=""/>
+        <default applyOnUpdate="0" field="REGION" expression=""/>
+        <default applyOnUpdate="0" field="ACSTOTPOP" expression=""/>
+        <default applyOnUpdate="0" field="D_PM25_2" expression=""/>
+        <default applyOnUpdate="0" field="B_PM25_D2" expression=""/>
+        <default applyOnUpdate="0" field="P_PM25_D2" expression=""/>
+        <default applyOnUpdate="0" field="D_OZONE_2" expression=""/>
+        <default applyOnUpdate="0" field="B_OZONE_D2" expression=""/>
+        <default applyOnUpdate="0" field="P_OZONE_D2" expression=""/>
+        <default applyOnUpdate="0" field="D_DSLPM_2" expression=""/>
+        <default applyOnUpdate="0" field="B_DSLPM_D2" expression=""/>
+        <default applyOnUpdate="0" field="P_DSLPM_D2" expression=""/>
+        <default applyOnUpdate="0" field="D_CANCR_2" expression=""/>
+        <default applyOnUpdate="0" field="B_CANCR_D2" expression=""/>
+        <default applyOnUpdate="0" field="P_CANCR_D2" expression=""/>
+        <default applyOnUpdate="0" field="D_RESP_2" expression=""/>
+        <default applyOnUpdate="0" field="B_RESP_D2" expression=""/>
+        <default applyOnUpdate="0" field="P_RESP_D2" expression=""/>
+        <default applyOnUpdate="0" field="D_PTRAF_2" expression=""/>
+        <default applyOnUpdate="0" field="B_PTRAF_D2" expression=""/>
+        <default applyOnUpdate="0" field="P_PTRAF_D2" expression=""/>
+        <default applyOnUpdate="0" field="D_LDPNT_2" expression=""/>
+        <default applyOnUpdate="0" field="B_LDPNT_D2" expression=""/>
+        <default applyOnUpdate="0" field="P_LDPNT_D2" expression=""/>
+        <default applyOnUpdate="0" field="D_PNPL_2" expression=""/>
+        <default applyOnUpdate="0" field="B_PNPL_D2" expression=""/>
+        <default applyOnUpdate="0" field="P_PNPL_D2" expression=""/>
+        <default applyOnUpdate="0" field="D_PRMP_2" expression=""/>
+        <default applyOnUpdate="0" field="B_PRMP_D2" expression=""/>
+        <default applyOnUpdate="0" field="P_PRMP_D2" expression=""/>
+        <default applyOnUpdate="0" field="D_PTSDF_2" expression=""/>
+        <default applyOnUpdate="0" field="B_PTSDF_D2" expression=""/>
+        <default applyOnUpdate="0" field="P_PTSDF_D2" expression=""/>
+        <default applyOnUpdate="0" field="D_PWDIS_2" expression=""/>
+        <default applyOnUpdate="0" field="B_PWDIS_D2" expression=""/>
+        <default applyOnUpdate="0" field="P_PWDIS_D2" expression=""/>
+        <default applyOnUpdate="0" field="PM25" expression=""/>
+        <default applyOnUpdate="0" field="B_PM25" expression=""/>
+        <default applyOnUpdate="0" field="P_PM25" expression=""/>
+        <default applyOnUpdate="0" field="OZONE" expression=""/>
+        <default applyOnUpdate="0" field="B_OZONE" expression=""/>
+        <default applyOnUpdate="0" field="P_OZONE" expression=""/>
+        <default applyOnUpdate="0" field="DSLPM" expression=""/>
+        <default applyOnUpdate="0" field="B_DSLPM" expression=""/>
+        <default applyOnUpdate="0" field="P_DSLPM" expression=""/>
+        <default applyOnUpdate="0" field="CANCER" expression=""/>
+        <default applyOnUpdate="0" field="B_CANCR" expression=""/>
+        <default applyOnUpdate="0" field="P_CANCR" expression=""/>
+        <default applyOnUpdate="0" field="RESP" expression=""/>
+        <default applyOnUpdate="0" field="B_RESP" expression=""/>
+        <default applyOnUpdate="0" field="P_RESP" expression=""/>
+        <default applyOnUpdate="0" field="PTRAF" expression=""/>
+        <default applyOnUpdate="0" field="B_PTRAF" expression=""/>
+        <default applyOnUpdate="0" field="P_PTRAF" expression=""/>
+        <default applyOnUpdate="0" field="PRE1960PCT" expression=""/>
+        <default applyOnUpdate="0" field="B_LDPNT" expression=""/>
+        <default applyOnUpdate="0" field="P_LDPNT" expression=""/>
+        <default applyOnUpdate="0" field="PNPL" expression=""/>
+        <default applyOnUpdate="0" field="B_PNPL" expression=""/>
+        <default applyOnUpdate="0" field="P_PNPL" expression=""/>
+        <default applyOnUpdate="0" field="PRMP" expression=""/>
+        <default applyOnUpdate="0" field="B_PRMP" expression=""/>
+        <default applyOnUpdate="0" field="P_PRMP" expression=""/>
+        <default applyOnUpdate="0" field="PTSDF" expression=""/>
+        <default applyOnUpdate="0" field="B_PTSDF" expression=""/>
+        <default applyOnUpdate="0" field="P_PTSDF" expression=""/>
+        <default applyOnUpdate="0" field="PWDIS" expression=""/>
+        <default applyOnUpdate="0" field="B_PWDIS" expression=""/>
+        <default applyOnUpdate="0" field="P_PWDIS" expression=""/>
+        <default applyOnUpdate="0" field="VULEOPCT" expression=""/>
+        <default applyOnUpdate="0" field="B_VULEOPCT" expression=""/>
+        <default applyOnUpdate="0" field="P_VULEOPCT" expression=""/>
+        <default applyOnUpdate="0" field="MINORPCT" expression=""/>
+        <default applyOnUpdate="0" field="B_MINORPCT" expression=""/>
+        <default applyOnUpdate="0" field="P_MINORPCT" expression=""/>
+        <default applyOnUpdate="0" field="LOWINCPCT" expression=""/>
+        <default applyOnUpdate="0" field="B_LWINCPCT" expression=""/>
+        <default applyOnUpdate="0" field="P_LWINCPCT" expression=""/>
+        <default applyOnUpdate="0" field="LINGISOPCT" expression=""/>
+        <default applyOnUpdate="0" field="B_LNGISPCT" expression=""/>
+        <default applyOnUpdate="0" field="P_LNGISPCT" expression=""/>
+        <default applyOnUpdate="0" field="LESSHSPCT" expression=""/>
+        <default applyOnUpdate="0" field="B_LESHSPCT" expression=""/>
+        <default applyOnUpdate="0" field="P_LESHSPCT" expression=""/>
+        <default applyOnUpdate="0" field="UNDER5PCT" expression=""/>
+        <default applyOnUpdate="0" field="B_UNDR5PCT" expression=""/>
+        <default applyOnUpdate="0" field="P_UNDR5PCT" expression=""/>
+        <default applyOnUpdate="0" field="OVER64PCT" expression=""/>
+        <default applyOnUpdate="0" field="B_OVR64PCT" expression=""/>
+        <default applyOnUpdate="0" field="P_OVR64PCT" expression=""/>
+        <default applyOnUpdate="0" field="T_MINORPCT" expression=""/>
+        <default applyOnUpdate="0" field="T_LWINCPCT" expression=""/>
+        <default applyOnUpdate="0" field="T_LNGISPCT" expression=""/>
+        <default applyOnUpdate="0" field="T_LESHSPCT" expression=""/>
+        <default applyOnUpdate="0" field="T_UNDR5PCT" expression=""/>
+        <default applyOnUpdate="0" field="T_OVR64PCT" expression=""/>
+        <default applyOnUpdate="0" field="T_VULEOPCT" expression=""/>
+        <default applyOnUpdate="0" field="T_PM25" expression=""/>
+        <default applyOnUpdate="0" field="T_PM25_D2" expression=""/>
+        <default applyOnUpdate="0" field="T_OZONE" expression=""/>
+        <default applyOnUpdate="0" field="T_OZONE_D2" expression=""/>
+        <default applyOnUpdate="0" field="T_DSLPM" expression=""/>
+        <default applyOnUpdate="0" field="T_DSLPM_D2" expression=""/>
+        <default applyOnUpdate="0" field="T_CANCR" expression=""/>
+        <default applyOnUpdate="0" field="T_CANCR_D2" expression=""/>
+        <default applyOnUpdate="0" field="T_RESP" expression=""/>
+        <default applyOnUpdate="0" field="T_RESP_D2" expression=""/>
+        <default applyOnUpdate="0" field="T_PTRAF" expression=""/>
+        <default applyOnUpdate="0" field="T_PTRAF_D2" expression=""/>
+        <default applyOnUpdate="0" field="T_LDPNT" expression=""/>
+        <default applyOnUpdate="0" field="T_LDPNT_D2" expression=""/>
+        <default applyOnUpdate="0" field="T_PNPL" expression=""/>
+        <default applyOnUpdate="0" field="T_PNPL_D2" expression=""/>
+        <default applyOnUpdate="0" field="T_PRMP" expression=""/>
+        <default applyOnUpdate="0" field="T_PRMP_D2" expression=""/>
+        <default applyOnUpdate="0" field="T_PTSDF" expression=""/>
+        <default applyOnUpdate="0" field="T_PTSDF_D2" expression=""/>
+        <default applyOnUpdate="0" field="T_PWDIS" expression=""/>
+        <default applyOnUpdate="0" field="T_PWDIS_D2" expression=""/>
+        <default applyOnUpdate="0" field="Shape_Length" expression=""/>
+        <default applyOnUpdate="0" field="Shape_Area" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="OBJECTID" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="ID" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="STATE_NAME" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="ST_ABBREV" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="REGION" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="ACSTOTPOP" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="D_PM25_2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_PM25_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_PM25_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="D_OZONE_2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_OZONE_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_OZONE_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="D_DSLPM_2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_DSLPM_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_DSLPM_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="D_CANCR_2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_CANCR_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_CANCR_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="D_RESP_2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_RESP_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_RESP_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="D_PTRAF_2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_PTRAF_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_PTRAF_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="D_LDPNT_2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_LDPNT_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_LDPNT_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="D_PNPL_2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_PNPL_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_PNPL_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="D_PRMP_2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_PRMP_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_PRMP_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="D_PTSDF_2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_PTSDF_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_PTSDF_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="D_PWDIS_2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_PWDIS_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_PWDIS_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="PM25" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_PM25" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_PM25" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="OZONE" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_OZONE" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_OZONE" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="DSLPM" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_DSLPM" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_DSLPM" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="CANCER" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_CANCR" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_CANCR" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="RESP" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_RESP" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_RESP" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="PTRAF" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_PTRAF" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_PTRAF" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="PRE1960PCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_LDPNT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_LDPNT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="PNPL" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_PNPL" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_PNPL" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="PRMP" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_PRMP" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_PRMP" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="PTSDF" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_PTSDF" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_PTSDF" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="PWDIS" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_PWDIS" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_PWDIS" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="VULEOPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_VULEOPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_VULEOPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="MINORPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_MINORPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_MINORPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="LOWINCPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_LWINCPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_LWINCPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="LINGISOPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_LNGISPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_LNGISPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="LESSHSPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_LESHSPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_LESHSPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="UNDER5PCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_UNDR5PCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_UNDR5PCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="OVER64PCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="B_OVR64PCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="P_OVR64PCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_MINORPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_LWINCPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_LNGISPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_LESHSPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_UNDR5PCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_OVR64PCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_VULEOPCT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_PM25" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_PM25_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_OZONE" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_OZONE_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_DSLPM" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_DSLPM_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_CANCR" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_CANCR_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_RESP" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_RESP_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_PTRAF" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_PTRAF_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_LDPNT" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_LDPNT_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_PNPL" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_PNPL_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_PRMP" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_PRMP_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_PTSDF" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_PTSDF_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_PWDIS" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="T_PWDIS_D2" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="Shape_Length" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="Shape_Area" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" field="OBJECTID" exp=""/>
+        <constraint desc="" field="ID" exp=""/>
+        <constraint desc="" field="STATE_NAME" exp=""/>
+        <constraint desc="" field="ST_ABBREV" exp=""/>
+        <constraint desc="" field="REGION" exp=""/>
+        <constraint desc="" field="ACSTOTPOP" exp=""/>
+        <constraint desc="" field="D_PM25_2" exp=""/>
+        <constraint desc="" field="B_PM25_D2" exp=""/>
+        <constraint desc="" field="P_PM25_D2" exp=""/>
+        <constraint desc="" field="D_OZONE_2" exp=""/>
+        <constraint desc="" field="B_OZONE_D2" exp=""/>
+        <constraint desc="" field="P_OZONE_D2" exp=""/>
+        <constraint desc="" field="D_DSLPM_2" exp=""/>
+        <constraint desc="" field="B_DSLPM_D2" exp=""/>
+        <constraint desc="" field="P_DSLPM_D2" exp=""/>
+        <constraint desc="" field="D_CANCR_2" exp=""/>
+        <constraint desc="" field="B_CANCR_D2" exp=""/>
+        <constraint desc="" field="P_CANCR_D2" exp=""/>
+        <constraint desc="" field="D_RESP_2" exp=""/>
+        <constraint desc="" field="B_RESP_D2" exp=""/>
+        <constraint desc="" field="P_RESP_D2" exp=""/>
+        <constraint desc="" field="D_PTRAF_2" exp=""/>
+        <constraint desc="" field="B_PTRAF_D2" exp=""/>
+        <constraint desc="" field="P_PTRAF_D2" exp=""/>
+        <constraint desc="" field="D_LDPNT_2" exp=""/>
+        <constraint desc="" field="B_LDPNT_D2" exp=""/>
+        <constraint desc="" field="P_LDPNT_D2" exp=""/>
+        <constraint desc="" field="D_PNPL_2" exp=""/>
+        <constraint desc="" field="B_PNPL_D2" exp=""/>
+        <constraint desc="" field="P_PNPL_D2" exp=""/>
+        <constraint desc="" field="D_PRMP_2" exp=""/>
+        <constraint desc="" field="B_PRMP_D2" exp=""/>
+        <constraint desc="" field="P_PRMP_D2" exp=""/>
+        <constraint desc="" field="D_PTSDF_2" exp=""/>
+        <constraint desc="" field="B_PTSDF_D2" exp=""/>
+        <constraint desc="" field="P_PTSDF_D2" exp=""/>
+        <constraint desc="" field="D_PWDIS_2" exp=""/>
+        <constraint desc="" field="B_PWDIS_D2" exp=""/>
+        <constraint desc="" field="P_PWDIS_D2" exp=""/>
+        <constraint desc="" field="PM25" exp=""/>
+        <constraint desc="" field="B_PM25" exp=""/>
+        <constraint desc="" field="P_PM25" exp=""/>
+        <constraint desc="" field="OZONE" exp=""/>
+        <constraint desc="" field="B_OZONE" exp=""/>
+        <constraint desc="" field="P_OZONE" exp=""/>
+        <constraint desc="" field="DSLPM" exp=""/>
+        <constraint desc="" field="B_DSLPM" exp=""/>
+        <constraint desc="" field="P_DSLPM" exp=""/>
+        <constraint desc="" field="CANCER" exp=""/>
+        <constraint desc="" field="B_CANCR" exp=""/>
+        <constraint desc="" field="P_CANCR" exp=""/>
+        <constraint desc="" field="RESP" exp=""/>
+        <constraint desc="" field="B_RESP" exp=""/>
+        <constraint desc="" field="P_RESP" exp=""/>
+        <constraint desc="" field="PTRAF" exp=""/>
+        <constraint desc="" field="B_PTRAF" exp=""/>
+        <constraint desc="" field="P_PTRAF" exp=""/>
+        <constraint desc="" field="PRE1960PCT" exp=""/>
+        <constraint desc="" field="B_LDPNT" exp=""/>
+        <constraint desc="" field="P_LDPNT" exp=""/>
+        <constraint desc="" field="PNPL" exp=""/>
+        <constraint desc="" field="B_PNPL" exp=""/>
+        <constraint desc="" field="P_PNPL" exp=""/>
+        <constraint desc="" field="PRMP" exp=""/>
+        <constraint desc="" field="B_PRMP" exp=""/>
+        <constraint desc="" field="P_PRMP" exp=""/>
+        <constraint desc="" field="PTSDF" exp=""/>
+        <constraint desc="" field="B_PTSDF" exp=""/>
+        <constraint desc="" field="P_PTSDF" exp=""/>
+        <constraint desc="" field="PWDIS" exp=""/>
+        <constraint desc="" field="B_PWDIS" exp=""/>
+        <constraint desc="" field="P_PWDIS" exp=""/>
+        <constraint desc="" field="VULEOPCT" exp=""/>
+        <constraint desc="" field="B_VULEOPCT" exp=""/>
+        <constraint desc="" field="P_VULEOPCT" exp=""/>
+        <constraint desc="" field="MINORPCT" exp=""/>
+        <constraint desc="" field="B_MINORPCT" exp=""/>
+        <constraint desc="" field="P_MINORPCT" exp=""/>
+        <constraint desc="" field="LOWINCPCT" exp=""/>
+        <constraint desc="" field="B_LWINCPCT" exp=""/>
+        <constraint desc="" field="P_LWINCPCT" exp=""/>
+        <constraint desc="" field="LINGISOPCT" exp=""/>
+        <constraint desc="" field="B_LNGISPCT" exp=""/>
+        <constraint desc="" field="P_LNGISPCT" exp=""/>
+        <constraint desc="" field="LESSHSPCT" exp=""/>
+        <constraint desc="" field="B_LESHSPCT" exp=""/>
+        <constraint desc="" field="P_LESHSPCT" exp=""/>
+        <constraint desc="" field="UNDER5PCT" exp=""/>
+        <constraint desc="" field="B_UNDR5PCT" exp=""/>
+        <constraint desc="" field="P_UNDR5PCT" exp=""/>
+        <constraint desc="" field="OVER64PCT" exp=""/>
+        <constraint desc="" field="B_OVR64PCT" exp=""/>
+        <constraint desc="" field="P_OVR64PCT" exp=""/>
+        <constraint desc="" field="T_MINORPCT" exp=""/>
+        <constraint desc="" field="T_LWINCPCT" exp=""/>
+        <constraint desc="" field="T_LNGISPCT" exp=""/>
+        <constraint desc="" field="T_LESHSPCT" exp=""/>
+        <constraint desc="" field="T_UNDR5PCT" exp=""/>
+        <constraint desc="" field="T_OVR64PCT" exp=""/>
+        <constraint desc="" field="T_VULEOPCT" exp=""/>
+        <constraint desc="" field="T_PM25" exp=""/>
+        <constraint desc="" field="T_PM25_D2" exp=""/>
+        <constraint desc="" field="T_OZONE" exp=""/>
+        <constraint desc="" field="T_OZONE_D2" exp=""/>
+        <constraint desc="" field="T_DSLPM" exp=""/>
+        <constraint desc="" field="T_DSLPM_D2" exp=""/>
+        <constraint desc="" field="T_CANCR" exp=""/>
+        <constraint desc="" field="T_CANCR_D2" exp=""/>
+        <constraint desc="" field="T_RESP" exp=""/>
+        <constraint desc="" field="T_RESP_D2" exp=""/>
+        <constraint desc="" field="T_PTRAF" exp=""/>
+        <constraint desc="" field="T_PTRAF_D2" exp=""/>
+        <constraint desc="" field="T_LDPNT" exp=""/>
+        <constraint desc="" field="T_LDPNT_D2" exp=""/>
+        <constraint desc="" field="T_PNPL" exp=""/>
+        <constraint desc="" field="T_PNPL_D2" exp=""/>
+        <constraint desc="" field="T_PRMP" exp=""/>
+        <constraint desc="" field="T_PRMP_D2" exp=""/>
+        <constraint desc="" field="T_PTSDF" exp=""/>
+        <constraint desc="" field="T_PTSDF_D2" exp=""/>
+        <constraint desc="" field="T_PWDIS" exp=""/>
+        <constraint desc="" field="T_PWDIS_D2" exp=""/>
+        <constraint desc="" field="Shape_Length" exp=""/>
+        <constraint desc="" field="Shape_Area" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" name="OBJECTID" type="field"/>
+          <column width="-1" hidden="0" name="ID" type="field"/>
+          <column width="-1" hidden="0" name="STATE_NAME" type="field"/>
+          <column width="-1" hidden="0" name="ST_ABBREV" type="field"/>
+          <column width="-1" hidden="0" name="REGION" type="field"/>
+          <column width="-1" hidden="0" name="ACSTOTPOP" type="field"/>
+          <column width="-1" hidden="0" name="D_PM25_2" type="field"/>
+          <column width="-1" hidden="0" name="B_PM25_D2" type="field"/>
+          <column width="-1" hidden="0" name="P_PM25_D2" type="field"/>
+          <column width="-1" hidden="0" name="D_OZONE_2" type="field"/>
+          <column width="-1" hidden="0" name="B_OZONE_D2" type="field"/>
+          <column width="-1" hidden="0" name="P_OZONE_D2" type="field"/>
+          <column width="-1" hidden="0" name="D_DSLPM_2" type="field"/>
+          <column width="-1" hidden="0" name="B_DSLPM_D2" type="field"/>
+          <column width="-1" hidden="0" name="P_DSLPM_D2" type="field"/>
+          <column width="-1" hidden="0" name="D_CANCR_2" type="field"/>
+          <column width="-1" hidden="0" name="B_CANCR_D2" type="field"/>
+          <column width="-1" hidden="0" name="P_CANCR_D2" type="field"/>
+          <column width="-1" hidden="0" name="D_RESP_2" type="field"/>
+          <column width="-1" hidden="0" name="B_RESP_D2" type="field"/>
+          <column width="-1" hidden="0" name="P_RESP_D2" type="field"/>
+          <column width="-1" hidden="0" name="D_PTRAF_2" type="field"/>
+          <column width="-1" hidden="0" name="B_PTRAF_D2" type="field"/>
+          <column width="-1" hidden="0" name="P_PTRAF_D2" type="field"/>
+          <column width="-1" hidden="0" name="D_LDPNT_2" type="field"/>
+          <column width="-1" hidden="0" name="B_LDPNT_D2" type="field"/>
+          <column width="-1" hidden="0" name="P_LDPNT_D2" type="field"/>
+          <column width="-1" hidden="0" name="D_PNPL_2" type="field"/>
+          <column width="-1" hidden="0" name="B_PNPL_D2" type="field"/>
+          <column width="-1" hidden="0" name="P_PNPL_D2" type="field"/>
+          <column width="-1" hidden="0" name="D_PRMP_2" type="field"/>
+          <column width="-1" hidden="0" name="B_PRMP_D2" type="field"/>
+          <column width="-1" hidden="0" name="P_PRMP_D2" type="field"/>
+          <column width="-1" hidden="0" name="D_PTSDF_2" type="field"/>
+          <column width="-1" hidden="0" name="B_PTSDF_D2" type="field"/>
+          <column width="-1" hidden="0" name="P_PTSDF_D2" type="field"/>
+          <column width="-1" hidden="0" name="D_PWDIS_2" type="field"/>
+          <column width="-1" hidden="0" name="B_PWDIS_D2" type="field"/>
+          <column width="-1" hidden="0" name="P_PWDIS_D2" type="field"/>
+          <column width="-1" hidden="0" name="PM25" type="field"/>
+          <column width="-1" hidden="0" name="B_PM25" type="field"/>
+          <column width="-1" hidden="0" name="P_PM25" type="field"/>
+          <column width="-1" hidden="0" name="OZONE" type="field"/>
+          <column width="-1" hidden="0" name="B_OZONE" type="field"/>
+          <column width="-1" hidden="0" name="P_OZONE" type="field"/>
+          <column width="-1" hidden="0" name="DSLPM" type="field"/>
+          <column width="-1" hidden="0" name="B_DSLPM" type="field"/>
+          <column width="-1" hidden="0" name="P_DSLPM" type="field"/>
+          <column width="-1" hidden="0" name="CANCER" type="field"/>
+          <column width="-1" hidden="0" name="B_CANCR" type="field"/>
+          <column width="-1" hidden="0" name="P_CANCR" type="field"/>
+          <column width="-1" hidden="0" name="RESP" type="field"/>
+          <column width="-1" hidden="0" name="B_RESP" type="field"/>
+          <column width="-1" hidden="0" name="P_RESP" type="field"/>
+          <column width="-1" hidden="0" name="PTRAF" type="field"/>
+          <column width="-1" hidden="0" name="B_PTRAF" type="field"/>
+          <column width="-1" hidden="0" name="P_PTRAF" type="field"/>
+          <column width="-1" hidden="0" name="PRE1960PCT" type="field"/>
+          <column width="-1" hidden="0" name="B_LDPNT" type="field"/>
+          <column width="-1" hidden="0" name="P_LDPNT" type="field"/>
+          <column width="-1" hidden="0" name="PNPL" type="field"/>
+          <column width="-1" hidden="0" name="B_PNPL" type="field"/>
+          <column width="-1" hidden="0" name="P_PNPL" type="field"/>
+          <column width="-1" hidden="0" name="PRMP" type="field"/>
+          <column width="-1" hidden="0" name="B_PRMP" type="field"/>
+          <column width="-1" hidden="0" name="P_PRMP" type="field"/>
+          <column width="-1" hidden="0" name="PTSDF" type="field"/>
+          <column width="-1" hidden="0" name="B_PTSDF" type="field"/>
+          <column width="-1" hidden="0" name="P_PTSDF" type="field"/>
+          <column width="-1" hidden="0" name="PWDIS" type="field"/>
+          <column width="-1" hidden="0" name="B_PWDIS" type="field"/>
+          <column width="-1" hidden="0" name="P_PWDIS" type="field"/>
+          <column width="-1" hidden="0" name="VULEOPCT" type="field"/>
+          <column width="-1" hidden="0" name="B_VULEOPCT" type="field"/>
+          <column width="-1" hidden="0" name="P_VULEOPCT" type="field"/>
+          <column width="-1" hidden="0" name="MINORPCT" type="field"/>
+          <column width="-1" hidden="0" name="B_MINORPCT" type="field"/>
+          <column width="-1" hidden="0" name="P_MINORPCT" type="field"/>
+          <column width="-1" hidden="0" name="LOWINCPCT" type="field"/>
+          <column width="-1" hidden="0" name="B_LWINCPCT" type="field"/>
+          <column width="-1" hidden="0" name="P_LWINCPCT" type="field"/>
+          <column width="-1" hidden="0" name="LINGISOPCT" type="field"/>
+          <column width="-1" hidden="0" name="B_LNGISPCT" type="field"/>
+          <column width="-1" hidden="0" name="P_LNGISPCT" type="field"/>
+          <column width="-1" hidden="0" name="LESSHSPCT" type="field"/>
+          <column width="-1" hidden="0" name="B_LESHSPCT" type="field"/>
+          <column width="-1" hidden="0" name="P_LESHSPCT" type="field"/>
+          <column width="-1" hidden="0" name="UNDER5PCT" type="field"/>
+          <column width="-1" hidden="0" name="B_UNDR5PCT" type="field"/>
+          <column width="-1" hidden="0" name="P_UNDR5PCT" type="field"/>
+          <column width="-1" hidden="0" name="OVER64PCT" type="field"/>
+          <column width="-1" hidden="0" name="B_OVR64PCT" type="field"/>
+          <column width="-1" hidden="0" name="P_OVR64PCT" type="field"/>
+          <column width="-1" hidden="0" name="T_MINORPCT" type="field"/>
+          <column width="-1" hidden="0" name="T_LWINCPCT" type="field"/>
+          <column width="-1" hidden="0" name="T_LNGISPCT" type="field"/>
+          <column width="-1" hidden="0" name="T_LESHSPCT" type="field"/>
+          <column width="-1" hidden="0" name="T_UNDR5PCT" type="field"/>
+          <column width="-1" hidden="0" name="T_OVR64PCT" type="field"/>
+          <column width="-1" hidden="0" name="T_VULEOPCT" type="field"/>
+          <column width="-1" hidden="0" name="T_PM25" type="field"/>
+          <column width="-1" hidden="0" name="T_PM25_D2" type="field"/>
+          <column width="-1" hidden="0" name="T_OZONE" type="field"/>
+          <column width="-1" hidden="0" name="T_OZONE_D2" type="field"/>
+          <column width="-1" hidden="0" name="T_DSLPM" type="field"/>
+          <column width="-1" hidden="0" name="T_DSLPM_D2" type="field"/>
+          <column width="-1" hidden="0" name="T_CANCR" type="field"/>
+          <column width="-1" hidden="0" name="T_CANCR_D2" type="field"/>
+          <column width="-1" hidden="0" name="T_RESP" type="field"/>
+          <column width="-1" hidden="0" name="T_RESP_D2" type="field"/>
+          <column width="-1" hidden="0" name="T_PTRAF" type="field"/>
+          <column width="-1" hidden="0" name="T_PTRAF_D2" type="field"/>
+          <column width="-1" hidden="0" name="T_LDPNT" type="field"/>
+          <column width="-1" hidden="0" name="T_LDPNT_D2" type="field"/>
+          <column width="-1" hidden="0" name="T_PNPL" type="field"/>
+          <column width="-1" hidden="0" name="T_PNPL_D2" type="field"/>
+          <column width="-1" hidden="0" name="T_PRMP" type="field"/>
+          <column width="-1" hidden="0" name="T_PRMP_D2" type="field"/>
+          <column width="-1" hidden="0" name="T_PTSDF" type="field"/>
+          <column width="-1" hidden="0" name="T_PTSDF_D2" type="field"/>
+          <column width="-1" hidden="0" name="T_PWDIS" type="field"/>
+          <column width="-1" hidden="0" name="T_PWDIS_D2" type="field"/>
+          <column width="-1" hidden="0" name="Shape_Length" type="field"/>
+          <column width="-1" hidden="0" name="Shape_Area" type="field"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <reuseLastValue/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"STATE_NAME"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer hasScaleBasedVisibilityFlag="0" refreshOnNotifyMessage="" readOnly="0" simplifyDrawingHints="1" maxScale="0" simplifyMaxScale="1" simplifyDrawingTol="1" autoRefreshEnabled="0" simplifyAlgorithm="0" type="vector" simplifyLocal="1" wkbType="MultiPolygon" minScale="100000000" styleCategories="AllStyleCategories" labelsEnabled="0" geometry="Polygon" refreshOnNotifyEnabled="0" autoRefreshTime="0">
+      <extent>
+        <xmin>-89.56948800000000688</xmin>
+        <ymin>36.49714699999999823</ymin>
+        <xmax>-81.96476099999999576</xmax>
+        <ymax>39.14744999999999919</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>-89.56948800000000688</xmin>
+        <ymin>36.49714699999999823</ymin>
+        <xmax>-81.96476099999999576</xmax>
+        <ymax>39.14744999999999919</ymax>
+      </wgs84extent>
+      <id>KY_494773c5_b803_4394_8560_a89db561a69a</id>
+      <datasource>./KY.geojson</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>KY</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="0" crs="" maxz="0" minx="0" minz="0" miny="0" maxx="0" dimensions="2"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal fixedDuration="0" endField="" endExpression="" accumulate="0" durationField="" startField="" durationUnit="min" startExpression="" enabled="0" mode="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 enableorderby="0" symbollevels="0" forceraster="0" type="singleSymbol">
+        <symbols>
+          <symbol alpha="1" force_rhr="0" name="0" clip_to_extent="1" type="fill">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option name="name" value="" type="QString"/>
+                <Option name="properties"/>
+                <Option name="type" value="collection" type="QString"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+              <Option type="Map">
+                <Option name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+                <Option name="color" value="190,178,151,255" type="QString"/>
+                <Option name="joinstyle" value="bevel" type="QString"/>
+                <Option name="offset" value="0,0" type="QString"/>
+                <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+                <Option name="offset_unit" value="MM" type="QString"/>
+                <Option name="outline_color" value="35,35,35,255" type="QString"/>
+                <Option name="outline_style" value="solid" type="QString"/>
+                <Option name="outline_width" value="0.26" type="QString"/>
+                <Option name="outline_width_unit" value="MM" type="QString"/>
+                <Option name="style" value="solid" type="QString"/>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="190,178,151,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" value="" type="QString"/>
+                  <Option name="properties"/>
+                  <Option name="type" value="collection" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option type="Map">
+          <Option name="embeddedWidgets/count" value="0" type="int"/>
+          <Option name="variableNames"/>
+          <Option name="variableValues"/>
+        </Option>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory backgroundAlpha="255" enabled="0" lineSizeScale="3x:0,0,0,0,0,0" showAxis="1" spacingUnit="MM" sizeScale="3x:0,0,0,0,0,0" spacing="5" spacingUnitScale="3x:0,0,0,0,0,0" sizeType="MM" penAlpha="255" backgroundColor="#ffffff" scaleDependency="Area" maxScaleDenominator="1e+08" minimumSize="0" rotationOffset="270" minScaleDenominator="0" penWidth="0" width="15" direction="0" height="15" barWidth="5" penColor="#000000" opacity="1" diagramOrientation="Up" lineSizeType="MM" labelPlacementMethod="XHeight" scaleBasedVisibility="0">
+          <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <axisSymbol>
+            <symbol alpha="1" force_rhr="0" name="" clip_to_extent="1" type="line">
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" value="" type="QString"/>
+                  <Option name="properties"/>
+                  <Option name="type" value="collection" type="QString"/>
+                </Option>
+              </data_defined_properties>
+              <layer class="SimpleLine" pass="0" locked="0" enabled="1">
+                <Option type="Map">
+                  <Option name="align_dash_pattern" value="0" type="QString"/>
+                  <Option name="capstyle" value="square" type="QString"/>
+                  <Option name="customdash" value="5;2" type="QString"/>
+                  <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+                  <Option name="customdash_unit" value="MM" type="QString"/>
+                  <Option name="dash_pattern_offset" value="0" type="QString"/>
+                  <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+                  <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
+                  <Option name="draw_inside_polygon" value="0" type="QString"/>
+                  <Option name="joinstyle" value="bevel" type="QString"/>
+                  <Option name="line_color" value="35,35,35,255" type="QString"/>
+                  <Option name="line_style" value="solid" type="QString"/>
+                  <Option name="line_width" value="0.26" type="QString"/>
+                  <Option name="line_width_unit" value="MM" type="QString"/>
+                  <Option name="offset" value="0" type="QString"/>
+                  <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+                  <Option name="offset_unit" value="MM" type="QString"/>
+                  <Option name="ring_filter" value="0" type="QString"/>
+                  <Option name="trim_distance_end" value="0" type="QString"/>
+                  <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+                  <Option name="trim_distance_end_unit" value="MM" type="QString"/>
+                  <Option name="trim_distance_start" value="0" type="QString"/>
+                  <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+                  <Option name="trim_distance_start_unit" value="MM" type="QString"/>
+                  <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
+                  <Option name="use_custom_dash" value="0" type="QString"/>
+                  <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+                </Option>
+                <prop k="align_dash_pattern" v="0"/>
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="dash_pattern_offset" v="0"/>
+                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="dash_pattern_offset_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="35,35,35,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0.26"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="ring_filter" v="0"/>
+                <prop k="trim_distance_end" v="0"/>
+                <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="trim_distance_end_unit" v="MM"/>
+                <prop k="trim_distance_start" v="0"/>
+                <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="trim_distance_start_unit" v="MM"/>
+                <prop k="tweak_dash_pattern_on_corners" v="0"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option name="name" value="" type="QString"/>
+                    <Option name="properties"/>
+                    <Option name="type" value="collection" type="QString"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </axisSymbol>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings priority="0" linePlacementFlags="18" dist="0" zIndex="0" obstacle="0" placement="1" showAll="1">
+        <properties>
+          <Option type="Map">
+            <Option name="name" value="" type="QString"/>
+            <Option name="properties"/>
+            <Option name="type" value="collection" type="QString"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks/>
+        <checkConfiguration type="Map">
+          <Option name="QgsGeometryGapCheck" type="Map">
+            <Option name="allowedGapsBuffer" value="0" type="double"/>
+            <Option name="allowedGapsEnabled" value="false" type="bool"/>
+            <Option name="allowedGapsLayer" value="" type="QString"/>
+          </Option>
+        </checkConfiguration>
+      </geometryOptions>
+      <legend showLabelLegend="0" type="default-vector"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field configurationFlags="None" name="id">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="name">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="state_abbr">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="state_fips">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="order_adm">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="month_adm">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="day_adm">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="year_adm">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="type">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="pop">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="sq_miles">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="prim_miles">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="id"/>
+        <alias index="1" name="" field="name"/>
+        <alias index="2" name="" field="state_abbr"/>
+        <alias index="3" name="" field="state_fips"/>
+        <alias index="4" name="" field="order_adm"/>
+        <alias index="5" name="" field="month_adm"/>
+        <alias index="6" name="" field="day_adm"/>
+        <alias index="7" name="" field="year_adm"/>
+        <alias index="8" name="" field="type"/>
+        <alias index="9" name="" field="pop"/>
+        <alias index="10" name="" field="sq_miles"/>
+        <alias index="11" name="" field="prim_miles"/>
+      </aliases>
+      <defaults>
+        <default applyOnUpdate="0" field="id" expression=""/>
+        <default applyOnUpdate="0" field="name" expression=""/>
+        <default applyOnUpdate="0" field="state_abbr" expression=""/>
+        <default applyOnUpdate="0" field="state_fips" expression=""/>
+        <default applyOnUpdate="0" field="order_adm" expression=""/>
+        <default applyOnUpdate="0" field="month_adm" expression=""/>
+        <default applyOnUpdate="0" field="day_adm" expression=""/>
+        <default applyOnUpdate="0" field="year_adm" expression=""/>
+        <default applyOnUpdate="0" field="type" expression=""/>
+        <default applyOnUpdate="0" field="pop" expression=""/>
+        <default applyOnUpdate="0" field="sq_miles" expression=""/>
+        <default applyOnUpdate="0" field="prim_miles" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="id" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="name" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="state_abbr" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="state_fips" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="order_adm" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="month_adm" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="day_adm" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="year_adm" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="type" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="pop" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="sq_miles" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="prim_miles" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" field="id" exp=""/>
+        <constraint desc="" field="name" exp=""/>
+        <constraint desc="" field="state_abbr" exp=""/>
+        <constraint desc="" field="state_fips" exp=""/>
+        <constraint desc="" field="order_adm" exp=""/>
+        <constraint desc="" field="month_adm" exp=""/>
+        <constraint desc="" field="day_adm" exp=""/>
+        <constraint desc="" field="year_adm" exp=""/>
+        <constraint desc="" field="type" exp=""/>
+        <constraint desc="" field="pop" exp=""/>
+        <constraint desc="" field="sq_miles" exp=""/>
+        <constraint desc="" field="prim_miles" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" name="id" type="field"/>
+          <column width="-1" hidden="0" name="name" type="field"/>
+          <column width="-1" hidden="0" name="state_abbr" type="field"/>
+          <column width="-1" hidden="0" name="state_fips" type="field"/>
+          <column width="-1" hidden="0" name="order_adm" type="field"/>
+          <column width="-1" hidden="0" name="month_adm" type="field"/>
+          <column width="-1" hidden="0" name="day_adm" type="field"/>
+          <column width="-1" hidden="0" name="year_adm" type="field"/>
+          <column width="-1" hidden="0" name="type" type="field"/>
+          <column width="-1" hidden="0" name="pop" type="field"/>
+          <column width="-1" hidden="0" name="sq_miles" type="field"/>
+          <column width="-1" hidden="0" name="prim_miles" type="field"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field name="day_adm" editable="1"/>
+        <field name="id" editable="1"/>
+        <field name="month_adm" editable="1"/>
+        <field name="name" editable="1"/>
+        <field name="order_adm" editable="1"/>
+        <field name="pop" editable="1"/>
+        <field name="prim_miles" editable="1"/>
+        <field name="sq_miles" editable="1"/>
+        <field name="state_abbr" editable="1"/>
+        <field name="state_fips" editable="1"/>
+        <field name="type" editable="1"/>
+        <field name="year_adm" editable="1"/>
+      </editable>
+      <labelOnTop>
+        <field name="day_adm" labelOnTop="0"/>
+        <field name="id" labelOnTop="0"/>
+        <field name="month_adm" labelOnTop="0"/>
+        <field name="name" labelOnTop="0"/>
+        <field name="order_adm" labelOnTop="0"/>
+        <field name="pop" labelOnTop="0"/>
+        <field name="prim_miles" labelOnTop="0"/>
+        <field name="sq_miles" labelOnTop="0"/>
+        <field name="state_abbr" labelOnTop="0"/>
+        <field name="state_fips" labelOnTop="0"/>
+        <field name="type" labelOnTop="0"/>
+        <field name="year_adm" labelOnTop="0"/>
+      </labelOnTop>
+      <reuseLastValue>
+        <field reuseLastValue="0" name="day_adm"/>
+        <field reuseLastValue="0" name="id"/>
+        <field reuseLastValue="0" name="month_adm"/>
+        <field reuseLastValue="0" name="name"/>
+        <field reuseLastValue="0" name="order_adm"/>
+        <field reuseLastValue="0" name="pop"/>
+        <field reuseLastValue="0" name="prim_miles"/>
+        <field reuseLastValue="0" name="sq_miles"/>
+        <field reuseLastValue="0" name="state_abbr"/>
+        <field reuseLastValue="0" name="state_fips"/>
+        <field reuseLastValue="0" name="type"/>
+        <field reuseLastValue="0" name="year_adm"/>
+      </reuseLastValue>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"name"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer hasScaleBasedVisibilityFlag="0" refreshOnNotifyMessage="" readOnly="0" simplifyDrawingHints="1" maxScale="0" simplifyMaxScale="1" simplifyDrawingTol="1" autoRefreshEnabled="0" simplifyAlgorithm="0" type="vector" simplifyLocal="1" wkbType="MultiPolygon" minScale="100000000" styleCategories="AllStyleCategories" labelsEnabled="0" geometry="Polygon" refreshOnNotifyEnabled="0" autoRefreshTime="0">
+      <extent>
+        <xmin>-88.90148600000000556</xmin>
+        <ymin>36.48186199999999957</ymin>
+        <xmax>-82.49273700000000531</xmax>
+        <ymax>38.80333799999999655</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>-88.90148600000000556</xmin>
+        <ymin>36.48186199999999957</ymin>
+        <xmax>-82.49273699999982057</xmax>
+        <ymax>38.80333800000002498</ymax>
+      </wgs84extent>
+      <id>UrbanAreas_KY_63ff23fd_364b_49ee_8382_951cad1fbcee</id>
+      <datasource>./UrbanAreas_KY.geojson|layername=UrbanAreas_KY</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>UrbanAreas_KY</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>GEOGCRS["NAD83",DATUM["North American Datum 1983",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Geodesy."],AREA["North America - onshore and offshore: Canada - Alberta; British Columbia; Manitoba; New Brunswick; Newfoundland and Labrador; Northwest Territories; Nova Scotia; Nunavut; Ontario; Prince Edward Island; Quebec; Saskatchewan; Yukon. Puerto Rico. United States (USA) - Alabama; Alaska; Arizona; Arkansas; California; Colorado; Connecticut; Delaware; Florida; Georgia; Hawaii; Idaho; Illinois; Indiana; Iowa; Kansas; Kentucky; Louisiana; Maine; Maryland; Massachusetts; Michigan; Minnesota; Mississippi; Missouri; Montana; Nebraska; Nevada; New Hampshire; New Jersey; New Mexico; New York; North Carolina; North Dakota; Ohio; Oklahoma; Oregon; Pennsylvania; Rhode Island; South Carolina; South Dakota; Tennessee; Texas; Utah; Vermont; Virginia; Washington; West Virginia; Wisconsin; Wyoming. US Virgin Islands. British Virgin Islands."],BBOX[14.92,167.65,86.46,-47.74]],ID["EPSG",4269]]</wkt>
+          <proj4>+proj=longlat +datum=NAD83 +no_defs</proj4>
+          <srsid>3401</srsid>
+          <srid>4269</srid>
+          <authid>EPSG:4269</authid>
+          <description>NAD83</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal fixedDuration="0" endField="" endExpression="" accumulate="0" durationField="" startField="" durationUnit="min" startExpression="" enabled="0" mode="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 enableorderby="0" symbollevels="0" forceraster="0" type="singleSymbol">
+        <symbols>
+          <symbol alpha="1" force_rhr="0" name="0" clip_to_extent="1" type="fill">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option name="name" value="" type="QString"/>
+                <Option name="properties"/>
+                <Option name="type" value="collection" type="QString"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+              <Option type="Map">
+                <Option name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+                <Option name="color" value="190,207,80,255" type="QString"/>
+                <Option name="joinstyle" value="bevel" type="QString"/>
+                <Option name="offset" value="0,0" type="QString"/>
+                <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+                <Option name="offset_unit" value="MM" type="QString"/>
+                <Option name="outline_color" value="35,35,35,255" type="QString"/>
+                <Option name="outline_style" value="solid" type="QString"/>
+                <Option name="outline_width" value="0.26" type="QString"/>
+                <Option name="outline_width_unit" value="MM" type="QString"/>
+                <Option name="style" value="solid" type="QString"/>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="190,207,80,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" value="" type="QString"/>
+                  <Option name="properties"/>
+                  <Option name="type" value="collection" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks type="StringList">
+          <Option value="" type="QString"/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend showLabelLegend="0" type="default-vector"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field configurationFlags="None" name="id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="uace10">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="ua_label">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="state">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="type">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="gis_acres">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="shape_leng">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="shape_area">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="id"/>
+        <alias index="1" name="" field="uace10"/>
+        <alias index="2" name="" field="ua_label"/>
+        <alias index="3" name="" field="state"/>
+        <alias index="4" name="" field="type"/>
+        <alias index="5" name="" field="gis_acres"/>
+        <alias index="6" name="" field="shape_leng"/>
+        <alias index="7" name="" field="shape_area"/>
+      </aliases>
+      <defaults>
+        <default applyOnUpdate="0" field="id" expression=""/>
+        <default applyOnUpdate="0" field="uace10" expression=""/>
+        <default applyOnUpdate="0" field="ua_label" expression=""/>
+        <default applyOnUpdate="0" field="state" expression=""/>
+        <default applyOnUpdate="0" field="type" expression=""/>
+        <default applyOnUpdate="0" field="gis_acres" expression=""/>
+        <default applyOnUpdate="0" field="shape_leng" expression=""/>
+        <default applyOnUpdate="0" field="shape_area" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="id" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="uace10" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="ua_label" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="state" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="type" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="gis_acres" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="shape_leng" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="shape_area" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" field="id" exp=""/>
+        <constraint desc="" field="uace10" exp=""/>
+        <constraint desc="" field="ua_label" exp=""/>
+        <constraint desc="" field="state" exp=""/>
+        <constraint desc="" field="type" exp=""/>
+        <constraint desc="" field="gis_acres" exp=""/>
+        <constraint desc="" field="shape_leng" exp=""/>
+        <constraint desc="" field="shape_area" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <reuseLastValue/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="KY_494773c5_b803_4394_8560_a89db561a69a"/>
+    <layer id="UrbanAreas_KY_63ff23fd_364b_49ee_8382_951cad1fbcee"/>
+    <layer id="EJSCREEN_2020_StatePctile_a7d894ce_5962_475b_aecd_4cb37a173fe2"/>
+  </layerorder>
+  <properties>
+    <DefaultStyles>
+      <ColorRamp type="QString"></ColorRamp>
+      <Fill type="QString"></Fill>
+      <Line type="QString"></Line>
+      <Marker type="QString"></Marker>
+      <Opacity type="double">1</Opacity>
+      <RandomColors type="bool">true</RandomColors>
+    </DefaultStyles>
+    <Digitizing>
+      <AvoidIntersectionsMode type="int">0</AvoidIntersectionsMode>
+    </Digitizing>
+    <Gui>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+    </Gui>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <Measure>
+      <Ellipsoid type="QString">EPSG:7019</Ellipsoid>
+    </Measure>
+    <Measurement>
+      <AreaUnits type="QString">m2</AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+    </Measurement>
+    <PAL>
+      <CandidatesLinePerCM type="double">5</CandidatesLinePerCM>
+      <CandidatesPolygonPerCM type="double">2.5</CandidatesPolygonPerCM>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <DrawUnplaced type="bool">false</DrawUnplaced>
+      <PlacementEngineVersion type="int">1</PlacementEngineVersion>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <TextFormat type="int">0</TextFormat>
+      <UnplacedColor type="QString">255,0,0,255</UnplacedColor>
+    </PAL>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+    </PositionPrecision>
+    <RenderMapTile type="bool">false</RenderMapTile>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <WCSLayers type="QStringList"/>
+    <WCSUrl type="QString"></WCSUrl>
+    <WFSLayers type="QStringList"/>
+    <WFSTLayers>
+      <Delete type="QStringList"/>
+      <Insert type="QStringList"/>
+      <Update type="QStringList"/>
+    </WFSTLayers>
+    <WFSUrl type="QString"></WFSUrl>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMSFeatureInfoUseAttributeFormSettings type="bool">false</WMSFeatureInfoUseAttributeFormSettings>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WMSMaxAtlasFeatures type="int">1</WMSMaxAtlasFeatures>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMSRootName type="QString"></WMSRootName>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WMSTileBuffer type="int">0</WMSTileBuffer>
+    <WMSUrl type="QString"></WMSUrl>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMTSGrids>
+      <CRS type="QStringList"/>
+      <Config type="QStringList"/>
+    </WMTSGrids>
+    <WMTSJpegLayers>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSJpegLayers>
+    <WMTSLayers>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSLayers>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <WMTSPngLayers>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSPngLayers>
+    <WMTSUrl type="QString"></WMTSUrl>
+  </properties>
+  <dataDefinedServerProperties>
+    <Option type="Map">
+      <Option name="name" value="" type="QString"/>
+      <Option name="properties"/>
+      <Option name="type" value="collection" type="QString"/>
+    </Option>
+  </dataDefinedServerProperties>
+  <visibility-presets/>
+  <transformContext>
+    <srcDest allowFallback="1" coordinateOp="+proj=noop">
+      <src>
+        <spatialrefsys>
+          <wkt>GEOGCRS["NAD83",DATUM["North American Datum 1983",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Geodesy."],AREA["North America - onshore and offshore: Canada - Alberta; British Columbia; Manitoba; New Brunswick; Newfoundland and Labrador; Northwest Territories; Nova Scotia; Nunavut; Ontario; Prince Edward Island; Quebec; Saskatchewan; Yukon. Puerto Rico. United States (USA) - Alabama; Alaska; Arizona; Arkansas; California; Colorado; Connecticut; Delaware; Florida; Georgia; Hawaii; Idaho; Illinois; Indiana; Iowa; Kansas; Kentucky; Louisiana; Maine; Maryland; Massachusetts; Michigan; Minnesota; Mississippi; Missouri; Montana; Nebraska; Nevada; New Hampshire; New Jersey; New Mexico; New York; North Carolina; North Dakota; Ohio; Oklahoma; Oregon; Pennsylvania; Rhode Island; South Carolina; South Dakota; Tennessee; Texas; Utah; Vermont; Virginia; Washington; West Virginia; Wisconsin; Wyoming. US Virgin Islands. British Virgin Islands."],BBOX[14.92,167.65,86.46,-47.74]],ID["EPSG",4269]]</wkt>
+          <proj4>+proj=longlat +datum=NAD83 +no_defs</proj4>
+          <srsid>3401</srsid>
+          <srid>4269</srid>
+          <authid>EPSG:4269</authid>
+          <description>NAD83</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </src>
+      <dest>
+        <spatialrefsys>
+          <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </dest>
+    </srcDest>
+    <srcDest allowFallback="1" coordinateOp="+proj=pipeline +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +inv +proj=hgridshift +grids=us_noaa_kyhpgn.tif +step +proj=lcc +lat_0=36.3333333333333 +lon_0=-85.75 +lat_1=37.0833333333333 +lat_2=38.6666666666667 +x_0=1500000 +y_0=999999.9998984 +ellps=GRS80 +step +proj=unitconvert +xy_in=m +xy_out=us-ft">
+      <src>
+        <spatialrefsys>
+          <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </src>
+      <dest>
+        <spatialrefsys>
+          <wkt>PROJCRS["NAD83 / Kentucky Single Zone (ftUS)",BASEGEOGCRS["NAD83",DATUM["North American Datum 1983",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4269]],CONVERSION["SPCS83 Kentucky Single Zone (US Survey feet)",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",36.3333333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",-85.75,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",37.0833333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",38.6666666666667,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",4921250,LENGTHUNIT["US survey foot",0.304800609601219],ID["EPSG",8826]],PARAMETER["Northing at false origin",3280833.333,LENGTHUNIT["US survey foot",0.304800609601219],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["US survey foot",0.304800609601219]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["US survey foot",0.304800609601219]],USAGE[SCOPE["State-wide spatial data management."],AREA["United States (USA) - Kentucky."],BBOX[36.49,-89.57,39.15,-81.95]],ID["EPSG",3089]]</wkt>
+          <proj4>+proj=lcc +lat_0=36.3333333333333 +lon_0=-85.75 +lat_1=37.0833333333333 +lat_2=38.6666666666667 +x_0=1500000 +y_0=999999.9998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs</proj4>
+          <srsid>1052</srsid>
+          <srid>3089</srid>
+          <authid>EPSG:3089</authid>
+          <description>NAD83 / Kentucky Single Zone (ftUS)</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </dest>
+    </srcDest>
+  </transformContext>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title></title>
+    <abstract></abstract>
+    <contact>
+      <name></name>
+      <organization></organization>
+      <position></position>
+      <voice></voice>
+      <fax></fax>
+      <email></email>
+      <role></role>
+    </contact>
+    <links/>
+    <author>Clay Giannini</author>
+    <creation>2021-12-07T17:37:30</creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+  <Bookmarks/>
+  <ProjectViewSettings UseProjectScales="0">
+    <Scales/>
+    <DefaultViewExtent ymax="4978011.03780071251094341" xmin="3255577.44699609465897083" ymin="1823543.45992622477933764" xmax="6378980.43815919570624828">
+      <spatialrefsys>
+        <wkt>PROJCRS["NAD83 / Kentucky Single Zone (ftUS)",BASEGEOGCRS["NAD83",DATUM["North American Datum 1983",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4269]],CONVERSION["SPCS83 Kentucky Single Zone (US Survey feet)",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",36.3333333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",-85.75,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",37.0833333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",38.6666666666667,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",4921250,LENGTHUNIT["US survey foot",0.304800609601219],ID["EPSG",8826]],PARAMETER["Northing at false origin",3280833.333,LENGTHUNIT["US survey foot",0.304800609601219],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["US survey foot",0.304800609601219]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["US survey foot",0.304800609601219]],USAGE[SCOPE["State-wide spatial data management."],AREA["United States (USA) - Kentucky."],BBOX[36.49,-89.57,39.15,-81.95]],ID["EPSG",3089]]</wkt>
+        <proj4>+proj=lcc +lat_0=36.3333333333333 +lon_0=-85.75 +lat_1=37.0833333333333 +lat_2=38.6666666666667 +x_0=1500000 +y_0=999999.9998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs</proj4>
+        <srsid>1052</srsid>
+        <srid>3089</srid>
+        <authid>EPSG:3089</authid>
+        <description>NAD83 / Kentucky Single Zone (ftUS)</description>
+        <projectionacronym>lcc</projectionacronym>
+        <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </DefaultViewExtent>
+  </ProjectViewSettings>
+  <ProjectTimeSettings cumulativeTemporalRange="0" timeStepUnit="h" frameRate="1" timeStep="1"/>
+  <ProjectDisplaySettings>
+    <BearingFormat id="bearing">
+      <Option type="Map">
+        <Option name="decimal_separator" value="" type="QChar"/>
+        <Option name="decimals" value="6" type="int"/>
+        <Option name="direction_format" value="0" type="int"/>
+        <Option name="rounding_type" value="0" type="int"/>
+        <Option name="show_plus" value="false" type="bool"/>
+        <Option name="show_thousand_separator" value="true" type="bool"/>
+        <Option name="show_trailing_zeros" value="false" type="bool"/>
+        <Option name="thousand_separator" value="" type="QChar"/>
+      </Option>
+    </BearingFormat>
+  </ProjectDisplaySettings>
+</qgis>
