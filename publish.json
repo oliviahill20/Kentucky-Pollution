@@ -1,0 +1,10 @@
+{
+    "title": "Kentucky Groundwater Sensitivity Heatmap",
+    "info": "The above map highlights metropolitan and micropolitan areas in the state of Kentucky (grey) as well a heatmap of groundwater sensitvity provided by the Kentucky Geological Survey. Kentucky's karst landscape 
+    has formed stunning underground features; such as, Mammoth Cave, Lost River Cave, and many more. These pourous systems also lead to an increased chance for pollution from industrial and agricultural runoff, as well as other sources.
+    By looking at the heatmap overlaid with the map of metropolitan areas, we see that some of the most sensitive groundwater systems are in highly populated areas of the state. With this information, industries and goverment groups can 
+    make decisions regarding stricter standards and policies to prevent further contamination of our most sensitive systems.", 
+    "coordinates": [37.521, -85.343],
+    "author": "oliviahill20", 
+    "link": "https://tastyfreeze.github.io/hometown-map/" 
+}
